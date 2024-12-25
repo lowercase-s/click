@@ -2,6 +2,10 @@ body {
     background-color: #B2C9AD;
 }
 @font-face {
+    font-family: Arial;
+    src: url(ARLRDBD.ttf);
+}
+@font-face {
     font-family: BrownSugar;
     src: url(BrownSugar.ttf);
 }
@@ -9,40 +13,34 @@ body {
     src: url(AGENCYR.ttf);
     font-family: Agency;
 }
-.Bulb {
-    position: relative;
-    top: 1000px;
-    left: 20%;
+.container {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
 }
-.buttons {
-    position: relative;
-    right: -120px;
-    top: 1800px;  
-}
-
 
 h1 {
     color: #4B5945;
     font-weight:bold;
     font-family: BrownSugar;
-    font-size: 200px;
-    position: absolute;
-    top: -100px;
-    left:0px;
-
-    /* top: 35%;
-    left: 20%; */
+    font-size:80px;
+    position: relative;
+    top: -450px;
+    left: 0px;
 }
 .circle {
     background-color: white;  
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    left: 40px;
-    top: 150px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 5px;
+    top: -250px;
     border-radius:50%;
     z-index: -1;
+
 }
 .circle:active {
     background-color: black;
@@ -50,84 +48,129 @@ h1 {
 
 .smallball {
     background-color: black;
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 350px;
-    left: 300px;
+    position: relative;
+    height: 5px;
+    width: 5px;
+    top: -440px;
+    left: 100px;
     border-radius: 50%;
     
 }
 
-.click {
+.text {
+    width: 200px;
+    font-size: 5px;
+    font-family: Agency;
+    position: relative;
+    top: -490px;
+    left: -60px;
+}
+
+.buttons {
     position: absolute;
-    top: 360px;
-    right: 0px;
+    right: 30px;
+    bottom: 150px; 
+    font-size: 10px;
     font-family: Agency;
     font-weight: bold;
-    font-size: 80px;
     text-align: center;
-    line-height: 100px;
+    line-height: 20px;
+    letter-spacing: 10px;
+}
+
+.click {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    height: 20px;
+    width: 100px;
+    border: 0.3rem solid;
     background-color: #d0e2c8;
-    border: .5rem solid;
-    letter-spacing: 15px;
-    height: 100px;
-    width: 280px;
-    box-shadow: 5px 5px rgb(170, 170, 170), 10px 10px black;
+    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
     transition:transform 10s ease;
 }
 .click:active {
     transform: scale(2);
-    box-shadow: 1px 1px, 5px 5px;
+    box-shadow: 1px 1px, 2px 2px;
 }
 
 .read {
+    height: 20px;
+    width: 100px;
+    border: 0.3rem solid;
     color: black;
-    font-weight: bold;
-    position: absolute;
-    top: 0px;
+    position: relative;
+    bottom: 20px;
     right: 0px;
     background-color: #9bb38f;
-    font-family: Agency;
-    font-size: 80px;
-    letter-spacing: 15px;
-    border: .5rem solid;
-    text-align: center;
-    line-height: 100px;
-   
-    /* top: 83%;
-    right: 10%; */
-    height: 100px;
-    width: 280px;
-    /* column-gap: 30px; */
-    box-shadow: 5px 5px rgb(170, 170, 170), 10px 10px black;
+    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
     transition: transform 10s ease;
 }
 .read:active {
     transform: scale(2);
-    box-shadow: 1px 1px, 5px 5px;
+    box-shadow: 1px 1px, 2px 2px;
 }
 .hack {
+    height: 20px;
+    width: 100px;
+    border: 0.3rem solid;
     color: black;
-    font-weight: bold;
-    letter-spacing: 20px;
-    position: absolute;
-    top: 180px;
+    position: relative;
+    bottom: -20px;
     right: 0px;
     background-color: #4B5945;
     font-family: Agency;
-    font-size: 80px;
-    border: .5rem solid;
-    text-align: center;
-    line-height: 100px;
-    height: 100px;
-    width: 280px;
-    box-shadow: 5px 5px rgb(170, 170, 170), 10px 10px black;
+    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
     cursor: default;
     transition: transform 10s ease;
     
 }
 .hack:active {
     transform: scale(2);
-    box-shadow: 1px 1px, 5px 5px;
+    box-shadow: 1px 1px, 2px 2px;
 }
+
+.strip {
+    display: flex;
+    gap: 20px;
+    font-size: 8px;
+    font-family: Agency;
+    position: absolute;
+    right: 30px;
+    line-height: 20px;
+    font-family: Arial;
+
+    
+}
+
+.contact {
+    background-color: #66785F;
+    
+    height: 20px;
+    width: 60px;
+    text-align: center;
+
+    border-radius: 14px;
+}
+
+.search {
+
+    background-color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    border-radius: 40px;
+    height: 30px;
+    width: 300px;
+    padding-right: 0px;
+    box-shadow: 0px 0px black;
+}
+.search:active {
+    box-shadow: 2px 2px;
+}
+/* @media all and (max-width: 768px) {
+    .Bulb {
+       color: red;
+    }
+} */
