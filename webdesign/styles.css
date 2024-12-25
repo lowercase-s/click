@@ -2,20 +2,32 @@ body{
     background-color: #B2C9AD;
 }
 
-.skullybutton {
-    height: 35px;
+.clicksmall {
+    height: 80px;
     position: fixed;
-    top: 200px;
+    top: 85%;
+    right: 20px;
+}
+.skullybutton {
+    height: 80px;
+    position: fixed;
+    top: 75%;
+    right: 20px;
+}
+
+.readmore {
+    height: 80px;
+    position: fixed;
+    top: 80%;
     right: 20px;
 }
 
 
-
 .skully {
-    height: 40px;
+    height: 140px;
     position: fixed;
-    right: 65px;
-    top: 150px;
+    right: 100px;
+    top: 50%;
 }
 .leaf {
     height: 300px;
@@ -24,47 +36,45 @@ body{
     bottom: 0px;
 
 }
-.readmore {
-    height: 35px;
-    position: fixed;
-    top: 250px;
-    right: 20px;
-}
+
 .about {
     height: 10px;
-    position: relative;
-    top: -150px;
-    left: 600px;
+    position: fixed;
+    top: 1%;
+    left: 43%;
 }
 .lines {
     padding: 0px;
     height: 200px;
-    position: relative;
-    top: 350px;
-    left: 54%;
+    position: fixed;
+    top: 55%;
+    left: 35%;
 }
 .cicle {
     padding: 0px;
-    height: 50px;
+    height: 150px;
     position: fixed;
-    top: 40%;
-    left: 50%;
+    top: 50%;
+    left: 30%;
+    translate: -50% -50%;
 }
 
 .falls {
     padding: 0px;
-    height: 40px;
-    position: relative;
-    top: 40px;
-    left: -10%;
+    height: 150px;
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    translate: -50% -50%;
 }
 
 .circle_button {
     padding: 0px;
-    height: 50px;
-    position: relative;
-    top: 380px;
-    left: 160px;
+    height: 100px;
+    position: fixed;
+    top: 63%;
+    left:77%;
+    translate: -50% -50%;
 }
 
 .splash {
