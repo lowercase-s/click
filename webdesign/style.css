@@ -1,6 +1,11 @@
 body {
-    background-color: #B2C9AD;
+    background-color: #d0e2c8;
+    margin: 0px;
+    height: 100vh;
+   width: calc(100% - 25px);
+    
 }
+
 @font-face {
     font-family: Arial;
     src: url(ARLRDBD.ttf);
@@ -13,32 +18,63 @@ body {
     src: url(AGENCYR.ttf);
     font-family: Agency;
 }
-.container {
-    position: absolute;
-    left: 20%;
-    top: 60px;
-    height: 2%;
-    width: 3%;
+
+.strip {
+    background-color: #ffffff;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: .5px solid white; */
 }
 
-h1 {
-    color: #4B5945;
-    font-weight:bold;
-    line-height: 0rem;
+.strip i {
+    display: none;
+}.strip h1 {
     font-family: BrownSugar;
-    font-size:80px;
-    position: relative;
-    top: -30px;    
+    font-size: 1vw;
+    padding-left: 20px;
+    
 }
+.strip2 {
+    display: flex;
+    gap: 30px;
+    font-family: sans-serif;
+    padding-right: 4vw;
+    
+}
+
+
+.strip2 h4 {
+    font-weight: bold;
+    font-size: .8vw;
+    font-family: "Afacad Flux", serif;
+}
+
+.container {
+    /* background-color: red; */
+    display: flex;
+    height: 50%;
+    width: calc(100% - 30px);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+
+
+
+
 .circle {
+    position: absolute;
     background-color: white;  
     height: 100px;
     width: 100px;
-    position: relative;
-    top: 100px;
-    transform: translate (-50%, -50%);
+    transform: translate(-80%);
     border-radius:50%;
-    z-index: -1;
+    z-index: 1;
 
 }
 .circle:active {
@@ -48,138 +84,146 @@ h1 {
 .smallball {
     background-color: black;
     position: relative;
-    height: 5px;
-    width: 5px;
-    top: -20px;
-    left: 0px;
+    height:1vmin;
+    width: 1vmin;
+    top: 13%;
+    left: -19%;
     border-radius: 50%;
-    
+    z-index: 1;
 }
 
-.text {
-    width: 200px;
-    font-size: 5px;
-    font-family: Agency;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
-.buttons {
+.container h2 {
+    /* background-color: red; */
+    font-family: "Afacad Flux", serif;
+    color: #4B5945;
+    font-size: 4vh;
     position: absolute;
-    right: 30px;
-    top: 70%; 
-    font-size: 10px;
-    font-family: Agency;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+    width: 50vw;
+    top: 30%;
+    left: 40%;
+    z-index: 1;
+
+}
+.container span {
+    color: white;
+}
+.down p {
+    position: absolute;
+    /* background-color: red; */
+    height: 40%;
+    width: 80%;
+    top: 45%;
+    left: 14.5%;
+    font-size: 2vh;
+    font-family: "Afacad Flux", serif;
+    z-index: 1;
+    
+
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #91AC8F;
+    height: 30%;
+    width: 100vw;
     font-weight: bold;
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 10px;
+    justify-content: space-between;
 }
 
-.click {
-    position: relative;
-    bottom: 0px;
-    right: 0px;
-    height: 20px;
-    width: 100px;
-    border: 0.3rem solid;
-    background-color: #d0e2c8;
-    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
-    transition:transform 10s ease;
+.about img {
+    position: absolute;
+    height: 200%;
+    top: -20vh;
 }
-.click:active {
-    transform: scale(2);
-    box-shadow: 1px 1px, 2px 2px;
-}
-
-.read {
-    height: 20px;
-    width: 100px;
-    border: 0.3rem solid;
-    color: black;
-    position: relative;
-    bottom: 20px;
-    right: 0px;
-    background-color: #9bb38f;
-    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
-    transition: transform 10s ease;
-}
-.read:active {
-    transform: scale(2);
-    box-shadow: 1px 1px, 2px 2px;
-}
-.hack {
-    height: 20px;
-    width: 100px;
-    border: 0.3rem solid;
-    color: black;
-    position: relative;
-    bottom: -20px;
-    right: 0px;
-    background-color: #4B5945;
-    font-family: Agency;
-    box-shadow: 2px 2px rgb(170, 170, 170), 5px 5px black;
-    cursor: default;
-    transition: transform 10s ease;
-    
-}
-.hack:active {
-    transform: scale(2);
-    box-shadow: 1px 1px, 2px 2px;
-}
-
-.strip {
-    display: flex;
-    gap: 20px;
-    font-size: 8px;
-    font-family: Agency;
-    line-height: 20px;
-    display: flex;
-    align-items: auto;
-    font-family: Arial;
-
+.about p {
+    position: absolute;
+    right: 10px;
+    font-family: "Afacad Flux";
+    font-size: 2vh;
+    width: 40%;
+    padding-right: 6vw;
     
 }
 
-a {
-    text-decoration: none;
-}
-.showcase {
-    
-    background-color: #66785F;
-    color: black;
-    text-decoration-style: none !important;
-    height: 20px;
-    width: 60px;
-    border-radius: 14px;
-    text-align: auto;
-    padding-left: 5px;
 
-}
-
-.search {
+/* .search {
 
     background-color: white;
     transform: translate(-50%, -50%);
-    border-radius: 40px;
-    height: 30px;
-    width: 70%;
-    padding-left: 0px;
+    border-radius: 4vmax;
+    height: 4vmax;
+    width: 70vw;
     position: absolute;
     justify-content: center;
-    top: 95%;
-    left: 50%;
-    
-
-
-    
+    bottom: 1vh;
+    left: 50%;   
     box-shadow: 0px 0px black;
     cursor: pointer;
-}
-
-/* @media all and (max-width: 768px) {
-    .Bulb {
-       color: red;
-    }
 } */
+
+@media (min-width: 600px) {
+    .container h2 {
+        /* background-color: blue; */
+        top: 20%;
+        left: 64%;
+        font-size: 3.2vh;
+        height: 10vh;
+        width: 90vw;
+    }
+    .circle {
+        top: 10%;
+        left: 25%;
+    }
+
+}
+@media (max-width: 600px) {
+    .strip h1{
+        font-size: 4vw;
+    }
+    .strip h4 {
+        display: none;
+    }
+    .strip i {
+        display: flex;
+    }
+    .container h2 {
+        top: 25%;
+        left: 67%;
+        font-size: 2.2vh;
+        height: 10vh;
+        width: 90vw;
+    }
+    .circle {
+        transform: translate(-50%);
+        top: 10%;
+        left: 25%;
+    }
+    .container {
+        height: 50%;
+        
+    }
+    .down p {
+        font-size: 1vh;
+        top: 40%;
+        left: 15%;
+        height: 15vh;
+        width: 70vw;
+    }
+
+    .smallball {
+        top: -10%;
+        left: -35%;
+    }
+    .about p {
+        font-size: 1.3vh;
+    }
+    .about img {
+        top: -20%;
+        left: -10%;
+        height: 100%;
+    }
+}
